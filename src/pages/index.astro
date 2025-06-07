@@ -1,17 +1,11 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
-
-<Layout>
-  <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-center">
-    shiileaf.dev
-  </h1>
-  <p class="text-sm sm:text-base md:text-lg text-center mt-4">
-    Welcome to shiileaf-card page.
-  </p>
-  <Welcome />
-</Layout>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>画像読み込みテスト</title>
+  </head>
+  <body>
+    <h1>Driveの画像表示テスト</h1>
+    <img id="img-box" alt="GAS画像" style="max-width: 100%;" />
+    <script src="/scripts/fetchImage.js" is:inline></script>
+  </body>
+</html>
