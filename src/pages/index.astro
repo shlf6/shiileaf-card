@@ -1,11 +1,35 @@
+---
+import "../styles/global.css";
+---
+
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>画像読み込みテスト</title>
+    <title>Shiiba Tatsuya | 名刺サイト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
-    <h1>Driveの画像表示テスト</h1>
-    <img id="img-box" alt="GAS画像" style="max-width: 100%;" />
-    <script src="/scripts/fetchImage.js" is:inline></script>
+  <body class="min-h-screen bg-gray-100 flex items-center justify-center">
+    <main class="bg-white p-8 rounded-2xl shadow-lg max-w-sm text-center">
+      <img src="shiileaf01.jpg" alt="プロフィール画像" class="w-32 h-32 rounded-full mx-auto mb-4" />
+      <h1 class="text-2xl font-bold text-gray-800 mb-1">Tatsuya Shiiba</h1>
+      <p class="text-sm text-gray-500 mb-4">インフラエンジニア / Cloud Engineer</p>
+
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="https://github.com/shlf6" target="_blank" rel="noopener noreferrer">
+          <img src="icons8-github-100.png" alt="GitHub" class="w-6 h-6" />
+        </a>
+        <a href="mailto:contact@shiileaf.dev">
+          <img src="icons8-mail-100.png" alt="Email" class="w-6 h-6" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer">
+          <img src="icons8-no-access-100.png" alt="X (旧Twitter)" class="w-6 h-6" />
+        </a>
+      </div>
+
+      <p class="text-gray-600 text-sm">
+        東京在住 / クラウド技術とIaCが得意です。<br />
+        Let's build reliable systems together.
+      </p>
+    </main>
   </body>
 </html>
